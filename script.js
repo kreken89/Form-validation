@@ -78,7 +78,7 @@ const validateText = (id) => {
   }
 
 
-const setSuccess = (input) => {
+  const setSuccess = (input) => {
     input.classList.remove('is-invalid');
     input.classList.add('is-valid');
     return true;
@@ -86,10 +86,9 @@ const setSuccess = (input) => {
   
   
   const setError = (input) => {       
-
+    
     input.classList.add('is-invalid');
     input.classList.remove('is-valid');
-    input.focus();
     console.log('Du har inte fyllt i ' + input.getAttribute('id') + ' korrekt.');
     return false;
   }
@@ -145,8 +144,6 @@ const errors = [];
   }
 
 })
-
-
 
 
 
