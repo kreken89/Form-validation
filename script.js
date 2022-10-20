@@ -66,6 +66,7 @@ const validateText = (id) => {
     }
   
   }
+  
 
   const validateCheck = (id) => {
     const checkbox = document.querySelector(id)
@@ -121,10 +122,8 @@ const errors = [];
     }
   }
 
-  console.log(errors)
-
   if(errors.includes(false)) {        
-    console.log('Du har inte fyllt i formuläret korrekt')
+    console.log('Formuläret är inte korrekt ifyllt.')
 
     let errormsg = document.querySelector('#errorMessage');
     errormsg.classList.remove('d-none')
@@ -139,7 +138,7 @@ const errors = [];
       email : email.value,
       password : password.value
     }
-    console.log('Kanon, du har lyckats fylla i formuläret korrekt');
+    console.log('Kanon, du har fyllt i formuläret korrekt');
     console.log(user);
   }
 
